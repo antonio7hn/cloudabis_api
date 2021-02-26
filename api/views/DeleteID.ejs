@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeleteID Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="formWrapper">
+        <% if (messages.info) { %>
+        <p class="success-message"><%- messages.info %></p>
+        <% } %>
+        <form class="commonForm" action="" method="POST">
+            <h1 class="headline">Delete ID</h1>
+            <div>
+                <label for="deleteID">ID</label>
+                <input type="text" name="deleteID" id="deleteID" value="">
+            </div>
+            <div>
+                <input type="submit" name="delete" value="Delete ID">
+            </div>
+            <div><a href="/" class="btnb">Back</a></div>
+        </form>
+        <label id="serverResult"></label>
+    </div>
+</body>
+</html>

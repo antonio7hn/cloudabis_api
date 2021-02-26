@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChangeID Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="formWrapper">
+        <% if (messages.info) { %>
+        <p class="success-message"><%- messages.info %></p>
+        <% } %>
+        <form class="commonForm" action="" method="POST">
+            <h1 class="headline">Change ID</h1>
+            <div>
+                <label for="oldID">Old ID</label>
+                <input type="text" name="oldID" id="oldID" value="">
+            </div>
+            <div>
+                <label for="newID">New ID</label>
+                <input type="text" name="newID" id="newID" value="">
+            </div>
+            <div>
+                <input type="submit" name="change" value="Change ID">
+            </div>
+            <div><a href="/" class="btnb">Back</a></div>            
+        </form>
+        <label id="serverResult"></label>
+    </div>
+</body>
+</html>

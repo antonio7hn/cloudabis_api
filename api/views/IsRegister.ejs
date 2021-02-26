@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IsRegister Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="formWrapper">
+        <% if (messages.info) { %>
+        <p class="success-message"><%- messages.info %></p>
+        <% } %>
+        <form class="commonForm" action="" method="POST">
+            <h1 class="headline">Escriba un ID para chequear si el ID existe o no</h1>
+            <label for="ID">ID:</label>
+            <input type="text" name="txtID" id="txtID" value="">
+            <input type="submit" name="submit" value="¿Está registrado?">
+            <a href="/" class="btnb">Atras</a>
+        </form>
+    </div>
+</body>
+</html>
